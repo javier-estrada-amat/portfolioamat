@@ -5,9 +5,21 @@
     padding:0px;
     margin:0px;
     box-sizing: border-box;  
+    
+  }
+
+  video{
+    
+    left: 0;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+
   }
   .index{
-    background-image: url(img/max-mckinnon-c9OCWLka764-unsplash.jpg);
+    background-image: url(img/1118672_Map_Horizon_Astronomy_1920x1080.mp4);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -21,10 +33,11 @@
       width: 100%;
       min-height: 100vh;
       background-color: #566ab0;
-      color:#ffffff;
+      color:#a0a0a0;
       /*Altura del 100% del navegador*/
       /* height: 100vh; */
       cursor: cell;
+      overflow: hidden;
   }
 
  a{
@@ -158,20 +171,26 @@
   /* Configuracion PORTFOLIO PORTFOLIO */
 
   header{
-    margin: 5vh 27vw;
+
     border: 3px solid rgb(4, 65, 74);
     border-radius: 300px;
     text-align: center;
     color: #bcd6e9;
     display: block;
     background-color: #12021f;
+    position: absolute;
+    margin-top: 5vh;
+    margin-left: 27vw;
+    
+    margin-bottom: 100vh;
+    align-items: center;
   }
   section{
     flex-direction: row;
     padding: 10px;
     display: flex;
     position: relative;
-    margin: 10vh 10vw;
+    margin: 14vh 10vw;
     justify-content: space-between;
     
 
