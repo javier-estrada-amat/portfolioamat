@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    font-family: "Anton", sans-serif;
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;  
+  }
+  .index{
+    background-image: url(img/max-mckinnon-c9OCWLka764-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+  .logo{
+    width: 70px;
+  }
+  body{
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      background-color: #566ab0;
+      color:#ffffff;
+      /*Altura del 100% del navegador*/
+      /* height: 100vh; */
+      cursor: cell;
+  }
+
+ a{
+    text-decoration: none;
+    color: #ffffff;
+ }
+
+  nav{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #12021f;
+      padding-left:5vw;
+      padding-right: 5vw;
+      padding-top: 0.5vh;
+      padding-bottom: 0.5vh;
+  }
+  .menu{
+      display: flex;
+      align-items: center;
+  }
+  li{
+      list-style: none;
+      cursor:pointer;
+      padding:1.5vw;
+      transition:all 0.3s ease-out 0s;
+  }
+  li:hover{
+      background-color: #bcd6e9;
+      color: #12021f;
+  }
+  /*Configuración footer*/
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .imgcopy{
+    width: 100%;
+    height: 100%;
+  }
+
+  .git, .linkedin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centra los iconos en el contenedor */
+    width: 50px;
+    height: 50px;
+    font-size: 35px; /* Ajusta el tamaño de los iconos */
+    color: #bcd6e9;
+    right: 0;
+  }
+  ion-icon {
+    font-size: 35px;
+    color: #bcd6e9;
+  }
+
+
+/*En esta seccion esta todo lo correspondiente al contenido del index.
+ Lo del menú y configuración general esta aquí arriba*/
+  .caja{
+    display: inline;
+    align-items: center;
+    width: 94vw;
+    height: 80vh;
+    margin: 50px 50px;
+   background-color: #12021f;
+  }
+
+  .texto{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 20vh ;
+    margin-left: 10vw;
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    font-size: 25px;
+    background-color: #00000010;
+  }
+  .titulo{
+   border-right: 5px solid #040404;
+   
+   color: #bcd6e9;
+
+  }
+  .contenedorfoto{
+    margin-top: 20vh;
+    margin-left: 65vw;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    
+  }
+
+  .fototexto{
+    width: 100%;
+    height: 100%;
+    border-radius: 200px;
+    border: 2px solid white;
+    
+  }
+
+  /* Aqui te incluyo una animacion 3D, el @keyframes clara una animacion y el nombre de esa animacion
+  despues donde queramos aplicar la animacion pues incluimos el animation: "nombre de la animacion" y demas parametros que queramos.
+  En mi caso he creado una animacion que gira en su propio eje "Y" es como si nos ponemos depie y giramos sobre nosotros*/
+
+  @keyframes rotationy {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  .fototexto:hover{
+    animation: rotationy 8s infinite linear;
+    
+  }
+
+  /* Configuracion PORTFOLIO PORTFOLIO */
+
+  header{
+    margin: 5vh 27vw;
+    border: 3px solid rgb(4, 65, 74);
+    border-radius: 300px;
+    text-align: center;
+    color: #bcd6e9;
+    display: block;
+    background-color: #12021f;
+  }
+  section{
+    flex-direction: row;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    margin: 10vh 10vw;
+    justify-content: space-between;
+    
+
+  }
+
+  h2{ 
+    border-bottom: 3px solid blueviolet;
+    color: #bcd6e9;
+    }
+
+  article{
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    border: 3px solid white;
+  }
+  /* Aquí añado css para un boton con una animacion cuando ponemos el raton encima, hay una etiqueta que es :after y content
+  Esto sirve para mostrar para añadir un codigo Unicode que muestra un simbolo en concreto es este " » "  */
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #9500f8;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .imgariculo{
+    width: 100%;
+    height: 100%;
+  }
+
+  @media(max-width:900px){
+      .logo-unir{
+          display: none;
+      }
+  }
+
