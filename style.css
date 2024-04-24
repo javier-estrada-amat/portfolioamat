@@ -360,7 +360,7 @@ textarea {
 input[type="submit"]
 {
   width: 100%; /* Ancho completo */
-  background-color: #d6172a; /* Color de fondo */
+  background-color: #fdf903; /* Color de fondo */
   color: white; /* Color de texto */
   border: 2px solid #007bff; /* Sin borde */
   padding: 10px; /* Relleno interno */
