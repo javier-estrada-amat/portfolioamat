@@ -25,7 +25,7 @@
       width: 100%;
       min-height: 100vh;
       background-color: #566ab0;
-      color:#a0a0a0;
+      color:#ffffff;
       /*Altura del 100% del navegador*/
       height: 100vh;
       cursor: cell;
@@ -321,6 +321,7 @@ progress {
 }
   /* FIN CSS CV */
 .todoformulario{
+    
     width: 0 auto;
     height: 89vh;
     color: rgb(0, 0, 0);
@@ -334,6 +335,7 @@ progress {
 }
 
 form {
+  
   display: flex;
   flex-wrap: wrap;
   max-width: 500px; /* Ancho máximo */
